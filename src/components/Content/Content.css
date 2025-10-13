@@ -33,7 +33,13 @@
 }
 
 .wrapper {
-    margin: 2rem;
+    position: absolute;
+    bottom: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper .button{
     display: flex;
