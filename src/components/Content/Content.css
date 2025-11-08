@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500;700&display=swap');
 /********************** Inicio **********************/
 
 .contenido {
@@ -25,16 +26,22 @@
     color: var(--white);
     position: relative;
     font-weight: 600;
+    font-family: 'Exo', Arial, sans-serif;
+    letter-spacing: 0.10em;
 }
+
+
 
 .inicio .titulo h1{
     font-size: 4.5rem;
     color: var(--green);
+    font-family: 'Exo', Arial, sans-serif;
+    letter-spacing: 0.10em;
 }
 
 .wrapper {
     position: absolute;
-    bottom: 360px;
+    bottom: 340px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

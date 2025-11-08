@@ -1,16 +1,11 @@
+
 import React from "react";
 import './Header.css';
-/* ReactScroll */
 import { Link } from 'react-scroll';
-
-/* React router */
 import { NavLink } from 'react-router-dom';
-
-/* DarkMode */
 import DarkMode from '../DarkMode/DarkMode';
-
-/* Language */
 import { FormattedMessage } from "react-intl";
+import GradientText from './GradientText';
 
 const Header = () => {
     // Menu desplegable
@@ -32,39 +27,41 @@ const Header = () => {
             <div id="menu-btn" className="fas fa-bars" onClick={menuDesplegable}></div>
 
             <NavLink className="logo" to="/">
-                <p><span>IMRAN1124</span></p>
+                <GradientText
+                    colors={["#40ffaa", "#FFD700", "#DC143C", "#40d2ff", "#40ffaa", "#FFD700", "#DC143C", "#40d2ff"]}
+                    animationSpeed={3}
+                    showBorder={false}
+                    className="custom-class"
+                >
+                    IMRAN1124
+                </GradientText>
             </NavLink>
 
             <nav className="navbar">
                 <Link to="inicio" spy={true} offset={-150} href="#inicio">
-                    <FormattedMessage
-                        id='home'
-                        defaultMessage='Home'
-                    />
+                    <GradientText colors={["#40ffaa", "#FFD700", "#DC143C", "#40d2ff", "#40ffaa", "#FFD700", "#DC143C", "#40d2ff"]} animationSpeed={3} showBorder={false} className="custom-class">
+                        <FormattedMessage id='home' defaultMessage='Home' />
+                    </GradientText>
                 </Link>
                 <Link to="sobre-mi" spy={true} offset={-150} href="#sobre-mi">
-                    <FormattedMessage
-                        id='about'
-                        defaultMessage='About me'
-                    />
+                    <GradientText colors={["#40ffaa", "#FFD700", "#FF0000", "#40ffaa", "#FFD700", "#FF0000"]} animationSpeed={3} showBorder={false} className="custom-class">
+                        <FormattedMessage id='about' defaultMessage='About me' />
+                    </GradientText>
                 </Link>
                 <Link to="proyectos" spy={true} offset={-150} href="#proyectos">
-                    <FormattedMessage
-                        id='projects'
-                        defaultMessage='Projects'
-                    />
+                    <GradientText colors={["#40ffaa", "#FFD700", "#FF0000", "#40ffaa", "#FFD700", "#FF0000"]} animationSpeed={3} showBorder={false} className="custom-class">
+                        <FormattedMessage id='projects' defaultMessage='Projects' />
+                    </GradientText>
                 </Link>
                 <Link to="experience" spy={true} offset={-150} href="#experience">
-                    <FormattedMessage
-                        id='experience'
-                        defaultMessage='Experience'
-                    />
+                    <GradientText colors={["#40ffaa", "#FFD700", "#FF0000", "#40ffaa", "#FFD700", "#FF0000"]} animationSpeed={3} showBorder={false} className="custom-class">
+                        <FormattedMessage id='experience' defaultMessage='Experience' />
+                    </GradientText>
                 </Link>
                 <Link to="contactos" spy={true} offset={-150} href="#contactos">
-                    <FormattedMessage
-                        id='contact'
-                        defaultMessage='Contact'
-                    />
+                    <GradientText colors={["#40ffaa", "#FFD700", "#FF0000", "#40ffaa", "#FFD700", "#FF0000"]} animationSpeed={3} showBorder={false} className="custom-class">
+                        <FormattedMessage id='contact' defaultMessage='Contact' />
+                    </GradientText>
                 </Link>
             </nav>
             <div className="switch" id="switch">
